@@ -205,3 +205,116 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #FFD700;
 }
+
+
+/* Media Queries pour responsive design */
+@media only screen and (max-width: 768px) {
+    
+    /* Style du header */
+    header h1 {
+        font-size: 36px; /* Réduction de la taille du texte pour mobile */
+    }
+
+    header ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header ul {
+        text-align: center;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    /* Section principale d'introduction */
+    main {
+        padding: 20px;
+    }
+
+    main h2 {
+        font-size: 28px; /* Réduction de la taille du texte */
+    }
+
+    main p {
+        font-size: 16px; /* Réduction de la taille du texte */
+    }
+
+    main .cta {
+        padding: 10px 15px;
+        font-size: 16px; /* Réduction de la taille du texte */
+    }
+
+    /* Services section */
+    #services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 100%;
+        max-width: 90%;
+        margin: 15px auto;
+    }
+
+    /* Style du footer */
+    footer {
+        font-size: 16px; /* Réduction de la taille du texte */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    
+    /* Style du header */
+    header h1 {
+        font-size: 24px; /* Réduction de la taille du texte pour les très petits écrans */
+    }
+
+    header ul li a {
+        font-size: 18px;
+    }
+
+    /* Section principale d'introduction */
+    main h2 {
+        font-size: 24px;
+    }
+
+    main p {
+        font-size: 14px; /* Réduction supplémentaire de la taille du texte */
+    }
+
+    main .cta {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    /* Services section */
+    .service-item {
+        padding: 15px;
+        margin: 10px auto;
+        width: 100%;
+        max-width: 95%;
+    }
+
+    /* Formulaire de contact */
+    form {
+        padding: 20px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    /* Style du footer */
+    footer {
+        font-size: 14px;
+    }
+}
